@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .card-title,
+    .card-subtitle {
+        color: #03C869;
+    }
+
+    .btn-collapse {
+        background-color: #03C869;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Prevenção e Tratamento</h1>
+        <h3>Medidas não farmacológicas</h3>
+        <div class="row">
+            <div class="col">
+                <div class="card py-5 text-center">
+                    <div class="card-body">
+                        <img src="images/1.png" alt="">
+                        <h5 class="card-title my-5">
+                            Hábitos de Vida
+                        </h5>
+                        <button class="btn btn-collapse w-75 fw-bold rounded-pill text-white" data-bs-toggle="collapse"
+                            data-bs-target="#habitos-de-vida" aria-expanded="false" aria-controls="habitos-de-vida">
+                            <span>Saiba mais</span>
+                            <br>
+                            <i class="bi bi-chevron-double-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card py-5 text-center">
+                    <div class="card-body">
+                        <img src="images/2.png" alt="">
+                        <h5 class="card-title my-5">
+                            Prevenção de Quedas
+                        </h5>
+                        <button class="btn btn-collapse w-75 fw-bold rounded-pill text-white" data-bs-toggle="collapse"
+                            data-bs-target="#prevencao-de-quedas" aria-expanded="false" aria-controls="prevencao-de-quedas">
+                            <span>Saiba mais</span>
+                            <br>
+                            <i class="bi bi-chevron-double-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card py-5 text-center">
+                    <div class="card-body">
+                        <img src="images/3.png" alt="">
+                        <h5 class="card-title my-5">
+                            Cálcio e vitamina D
+                        </h5>
+                        <button class="btn btn-collapse w-75 fw-bold rounded-pill text-white" data-bs-toggle="collapse"
+                            data-bs-target="#calcio-vitamina-d" aria-expanded="false" aria-controls="calcio-vitamina-d">
+                            <span>Saiba mais</span>
+                            <br>
+                            <i class="bi bi-chevron-double-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="card border-dark collapse my-3" id="habitos-de-vida">
+            <div class="card-body">
+                <button class="btn rounded-circle float-end" data-bs-toggle="collapse"
+                    data-bs-target="#habitos-de-vida">
+                    <i class="bi bi-x-circle-fill"></i>
+                </button>
+                <h3 class="card-title m-5 mb-3">
+                    Hábitos de Vida
+                </h3>
+                <div class="card-text mx-5 mb-5">
+                    Os pacientes deverão ser aconselhados a cessar o tabagismo, tendo em vista o impacto negativo sobre
+                    o metabolismo ósseo. Da mesma forma, o consumo excessivo de álcool também deverá ser desencorajado,
+                    uma vez que apresenta não só efeito deletério sobre a massa óssea, como também aumenta o risco de
+                    quedas
+                    (Cosman et al., 2014).
+                </div>
+            </div>
+        </div>
+        <div class="card border-dark collapse my-3" id="prevencao-de-quedas">
+            <div class="card-body">
+                <button class="btn rounded-circle float-end" data-bs-toggle="collapse"
+                    data-bs-target="#habitos-de-vida">
+                    <i class="bi bi-x-circle-fill"></i>
+                </button>
+                <h3 class="card-title m-5 mb-3">
+                    Prevenção de Quedas
+                </h3>
+                <div class="card-text mx-5 mb-5">
+                    A prevenção de quedas é uma prioridade em pacientes com diagnóstico de osteoporose, uma vez que
+                    apresenta uma associação com risco de fratura (JEREMIAH et al., 2015). Veja algumas estratégias
+                    empregadas para reduzir o risco de quedas, depois das informações.
+
+                    <h5 class="card-subtitle my-3">
+                        Exemplos de medidas empregadas para minimizar o risco de quedas
+                    </h5>
+                    <ul>
+                        <li>Modificação do ambiente doméstico;</li>
+                        <li>Retirar tapetes;</li>
+                        <li>Evitar móveis baixos e outros obstáculos à deambulação (fios, objetos no chão);</li>
+                        <li>Instalação de barras de segurança nos banheiros;</li>
+                        <li>Uso de pisos antiderrapantes;</li>
+                        <li>Manutenção de uma boa iluminação em todos os ambientes;</li>
+                        <li>Uso de sapatos leves, sem saltos, com sola antiderrapante;</li>
+                        <li>Uso de apoios à deambulação (bengalas, andadores), se necessário;</li>
+                        <li>Correção de distúrbios visuais;</li>
+                        <li>Evitar uso de medicações psicotrópicas (ansiolíticos, neurolépticos, hipnóticos);</li>
+                        <li>Correção de fatores desencadeantes de hipotensão postural.</li>
+                    </ul>
+                    <small class="text-end">
+                        Fonte: Summary of the Updated American Geriatrics Society/British Geriatrics Society
+                        clinical practice guideline for prevention of falls in older persons.
+                    </small>
+                    <div class="d-flex justify-content-center">
+                        <img src="images/exhausted-man.png" alt="">
+                    </div>
+                    <p>
+                        A realização está relacionada ao aumento da densidade mineral óssea e diminuição do risco de
+                        fraturas, ao passo que sedentarismo e imobilização prolongada são fatores associados a maior
+                        perda de massa óssea. Atividades que promovem resistência, fortalecimento muscular e treinamento
+                        de equilíbrio, como caminhada, tênis, dança, Pilates eChi, são as mais recomendadas. Por outro
+                        lado, exercícios de alto impacto devem ser realizados com cuidado pois, além de não conferirem
+                        ganho adicional de massa óssea, podem aumentar o risco de quedas e, consequentemente, de
+                        fraturas (COSMAN et al., 2014).
+                    </p>
+                    <h5 class="card-subtitle my-3">
+                        Saiba mais
+                    </h5>
+                    <p>
+                        Para um aprofundamento sobre importância e as estratégias de prevenção de quedas em idosos,
+                        consulte os seguintes links:
+                        <br/>
+                        <a href="http://sbgg.org.br/wp-content/uploads/2014/10/queda-idosos.pdf">
+                            http://sbgg.org.br/wp-content/uploads/2014/10/queda-idosos.pdf
+                        </a>
+                        <br/>
+                        <a href="http://sbgg.org.br/wp-content/uploads/2014/10/summary-of-the-updated.pdf">
+                            http://sbgg.org.br/wp-content/uploads/2014/10/summary-of-the-updated.pdf
+                        </a>
+                        <br/>
+                        <a href="http://www.casasegura.arq.br/">
+                            http://www.casasegura.arq.br/
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card border-dark collapse my-3" id="calcio-vitamina-d">
+            <div class="card-body">
+                <button class="btn rounded-circle float-end" data-bs-toggle="collapse"
+                    data-bs-target="#habitos-de-vida">
+                    <i class="bi bi-x-circle-fill"></i>
+                </button>
+                <h3 class="card-title m-5 mb-3">
+                    Cálcio e vitamina D
+                </h3>
+                <div class="card-text mx-5 mb-5">
+                    Os pacientes devem ser orientados a manter um aporte adequado de cálcio, preferencialmente por meio
+                    da dieta. A NOF recomenda um consumo de 1.000 mg/dia para homens entre 50-70 anos e de 1.200 mg/dia
+                    para homens >70 anos e mulheres > 50 anos (COSMAN et al., 2014).
+                    <h5 class="card-subtitle my-3">
+                        Quantidade de cálcio presente em alguns alimentos
+                    </h5>
+                    <table class="table">
+                        <tr>
+                            <th scope="col">Alimento</th>
+                            <th scope="col">Porção</th>
+                            <th scope="col">Peso</th>
+                            <th scope="col">Cálcio (mg)</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Leite enriquecido com cálcio
+                            </th>
+                            <td>
+                                1 copo
+                            </td>
+                            <td>
+                                240 ml
+                            </td>
+                            <td>
+                                384
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Queijo fresco
+                            </th>
+                            <td>
+                                2 pedaços
+                            </td>
+                            <td>
+                                56 g
+                            </td>
+                            <td>
+                                324
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Leite desnatado
+                            </th>
+                            <td>
+                                1 copo
+                            </td>
+                            <td>
+                                240 ml
+                            </td>
+                            <td>
+                                322
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Leite integral
+                            </th>
+                            <td>
+                                1 copo
+                            </td>
+                            <td>
+                                240 ml
+                            </td>
+                            <td>
+                                295
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Requeijão
+                            </th>
+                            <td>
+                                1 colher de sopa
+                            </td>
+                            <td>
+                                30 g
+                            </td>
+                            <td>
+                                78
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Iogurte natural enriquecido
+                            </th>
+                            <td>
+                                1 copo
+                            </td>
+                            <td>
+                                160g
+                            </td>
+                            <td>
+                                235
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Agrião
+                            </th>
+                            <td>
+
+                            </td>
+                            <td>
+                                100 g
+                            </td>
+                            <td>
+                                133
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Brócolis cozido
+                            </th>
+                            <td>
+
+                            </td>
+                            <td>
+                                100 g
+                            </td>
+                            <td>
+                                51
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Couve refogada
+                            </th>
+                            <td>
+
+                            </td>
+                            <td>
+                                100 g
+                            </td>
+                            <td>
+                                177
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Espinafre refogado
+                            </th>
+                            <td>
+
+                            </td>
+                            <td>
+                                100 g
+                            </td>
+                            <td>
+                                112
+                            </td>
+                        </tr>
+                    </table>
+                    <small class="text-end">
+                        Fonte: Tabela brasileira de composição de alimentos (2011).
+                    </small>
+                    <div class="d-flex justify-content-center">
+                        <img src="images/exhausted-man.png" alt="">
+                    </div>
+                    <p>
+                        As pessoas que não conseguem garantir a quantidade necessária de cálcio por meio da dieta devem
+                        fazer a suplementação com os sais de cálcio (carbonato ou citrato de cálcio). A absorção do
+                        carbonato de cálcio necessita da presença do ácido gástrico para sua dissolução, sendo
+                        recomendado seu consumo após uma refeição. Para melhorar a absorção, recomenda-se que não se
+                        administre mais do que 500 mg de cálcio por dose tomada. Entre os efeitos colaterais mais
+                        comuns, destacam-se náusea, dispepsia e constipação; consumo acima de 1.200-1.500 mg/dia pode
+                        aumentar o risco de cálculo renal e de doença cardiovascular (COSMAn et al., 2014).
+                    </p>
+                    <p>
+                        Com relação à vitamina D, recomenda-se uma dose de manutenção basal de 600-1.000 UI/dia para
+                        adultos acima de 50 anos de idade, com o objetivo de manter níveis séricos suficientes.
+                        Indivíduos com osteoporose apresentam necessidades diárias maiores, variando entre 1.500-2.000
+                        UI/dia. Para pacientes com osteoporose e risco de fraturas aumentado, recomenda-se que as
+                        concentrações de vitamina D se mantenham acima de 30 ng/mL para benefícios plenos sobre a
+                        prevenção do hiperparatireoidismo secundário, diminuição do risco de quedas e melhora da
+                        Densidade Mineral Óssea DMO (MAEDA et al., 2014).
+                    </p>
+                    <p>
+                        A principal fonte de vitamina D é a produção cutânea a partir da exposição solar. Nesse sentido,
+                        estimula-se a exposição ao sol durante 30 minutos/dia, 5 vezes por semana. Entretanto,
+                        frequentemente há necessidade de suplementação oral, sobretudo em indivíduos que apresentam
+                        fator de risco adicional para hipovitaminose D, como limitação da exposição ao sol (idosos
+                        institucionalizados, antecedente de câncer de pele ou lúpus). Quando os níveis séricos estão
+                        muito abaixo do desejado (abaixo de 20 ng/mL), pode ser necessária uma dose mais alta para
+                        reposição dos estoques corporais; um dos esquemas recomendados consiste na administração de
+                        50.000 UI/semana (ou 7.000 UI/dia) de vitamina D por 6 a 8 semanas (COSMAN et al., 2014; MAEDA
+                        et al., 2014).
+                    </p>
+                    <h5 class="card-subtitle my-3">
+                        Saiba mais
+                    </h5>
+                    <p>
+                        Para saber mais sobre avaliação e tratamento da hipovitaminose D, veja as Recomendações da
+                        Sociedade Brasileira de Endocrinologia e Metabologia para o Diagnóstico e Tratamento da
+                        Hipovitaminose D. Clique aqui para acessar.
+                        Aqui é link para:
+                        <br />
+                        <a href="http://sbgg.org.br/wp-content/uploads/2014/10/queda-idosos.pdf">
+                            http://www.scielo.br/pdf/abem/v58n5/0004-2730-abem-58-5-0411.pdf
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
