@@ -21,16 +21,28 @@
 <body>
     <div class="container">
         <div class="header text-center">
-            <h2 class="pt-5">
+            <h2 class="titulo pt-5">
                 <b>Introdução às Doenças Reumatológicas na Atenção Primária à Saúde</b>
             </h2>
         </div>
-        <button class="btn btn-acessibilidade rounded-pill text-white fw-bold">
-            Modo Acessibilidade
-        </button>
-        <h1><b>Prevenção e tratamento</b></h1>
-        <h3>Medidas não farmacológicas</h3>
-        <p>Para visualizar as informações, basta clicar nos botões dos cards abaixo</p>
+
+        <div class="d-flex">
+            <div>
+                <h2><b>Prevenção e tratamento</b></h2>
+                <h3>Medidas não farmacológicas</h3>
+                </div>
+            <div class="ms-auto">
+                <button class="btn px-3 mb-3 btn-acessibilidade rounded-pill text-white fw-bold">
+                    Modo Acessibilidade
+                    <img class="access img-invert ms-1" src="images/universal-access.svg" alt="">
+                </button>
+                <button class="btn mb-3 btn-padrao rounded-pill text-white fw-bold" style="display: none;">
+                    Modo Padrão
+                    <img class="access-acs ms-1" src="images/universal-access.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <p class="dica" style="display: none;">Para visualizar as informações, basta clicar nos botões dos cards abaixo</p>    
         <div class="row">
             <div class="col">
                 <div class="card py-5 text-center">
@@ -94,11 +106,16 @@
                     Hábitos de Vida
                 </h3>
                 <div class="card-text mx-5 mb-5">
-                    Os pacientes deverão ser aconselhados a cessar o tabagismo, tendo em vista o impacto negativo sobre
-                    o metabolismo ósseo. Da mesma forma, o consumo excessivo de álcool também deverá ser desencorajado,
-                    uma vez que apresenta não só efeito deletério sobre a massa óssea, como também aumenta o risco de
-                    quedas
-                    (Cosman et al., 2014).
+                    <p>
+                        Os pacientes deverão ser aconselhados a cessar o tabagismo, tendo em vista o impacto negativo
+                        sobre
+                        o metabolismo ósseo. Da mesma forma, o consumo excessivo de álcool também deverá ser
+                        desencorajado,
+                        uma vez que apresenta não só efeito deletério sobre a massa óssea, como também aumenta o risco
+                        de
+                        quedas
+                        (Cosman et al., 2014).
+                    </p>
                 </div>
             </div>
         </div>
@@ -113,9 +130,11 @@
                     Prevenção de Quedas
                 </h3>
                 <div class="card-text mx-5 mb-5">
-                    A prevenção de quedas é uma prioridade em pacientes com diagnóstico de osteoporose, uma vez que
-                    apresenta uma associação com risco de fratura (JEREMIAH et al., 2015). Veja algumas estratégias
-                    empregadas para reduzir o risco de quedas, depois das informações.
+                    <p>
+                        A prevenção de quedas é uma prioridade em pacientes com diagnóstico de osteoporose, uma vez que
+                        apresenta uma associação com risco de fratura (JEREMIAH et al., 2015). Veja algumas estratégias
+                        empregadas para reduzir o risco de quedas, depois das informações.
+                    </p>
 
                     <h5 class="card-subtitle my-3">
                         <i class="bi bi-arrow-return-right"></i>
@@ -184,9 +203,13 @@
                     Cálcio e vitamina D
                 </h3>
                 <div class="card-text mx-5 mb-5">
-                    Os pacientes devem ser orientados a manter um aporte adequado de cálcio, preferencialmente por meio
-                    da dieta. A NOF recomenda um consumo de 1.000 mg/dia para homens entre 50-70 anos e de 1.200 mg/dia
-                    para homens >70 anos e mulheres > 50 anos (COSMAN et al., 2014).
+                    <p>
+                        Os pacientes devem ser orientados a manter um aporte adequado de cálcio, preferencialmente por
+                        meio
+                        da dieta. A NOF recomenda um consumo de 1.000 mg/dia para homens entre 50-70 anos e de 1.200
+                        mg/dia
+                        para homens >70 anos e mulheres > 50 anos (COSMAN et al., 2014).
+                    </p>
                     <h5 class="card-subtitle my-3">
                         <i class="bi bi-arrow-return-right"></i>
                         Quantidade de cálcio presente em alguns alimentos
@@ -393,5 +416,7 @@
         </div>
     </div>
 </body>
+
+<script src="script.js"></script>
 
 </html>
