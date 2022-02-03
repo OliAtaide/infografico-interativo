@@ -7,6 +7,7 @@ $('.btn-acessibilidade').click(function () {
     $('h3, .card-title, .card-subtitle, h5').addClass('card-title-acs');
     $('.card').addClass('bg-black border-white');
     $('img').not('.access-acs').addClass('img-invert');
+    $('a').addClass('link');
 
     $('.btn-acessibilidade').hide();
     $('.btn-padrao').show();
@@ -22,8 +23,15 @@ $('.btn-padrao').click(function () {
     $('h3, .card-title, .card-subtitle, h5').removeClass('card-title-acs');
     $('.card').removeClass('bg-black border-white');
     $('img').not('.access').removeClass('img-invert');
+    $('a').removeClass('link');
 
     $('.btn-acessibilidade').show();
     $('.btn-padrao').hide();
     $('.dica').hide();
+})
+
+
+$('.btn-collapse').click(function () {
+    var id = $(this).data('bs-target');
+    $('.collapse').not(id).collapse('hide');
 })

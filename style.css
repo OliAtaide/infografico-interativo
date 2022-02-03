@@ -60,7 +60,7 @@ h3 {
     height: 2em;
 }
 
-.titulo, .close {
+h2, .close {
     color: var(--grey);
 }
 
@@ -76,6 +76,6 @@ h3 {
     font-size: 2em;
 }
 
-.dica{
+.dica, .link{
     color: var(--yellow) !important;   
 }
