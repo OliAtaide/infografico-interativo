@@ -79,3 +79,12 @@ h2, .close {
 .dica, .link{
     color: var(--yellow) !important;   
 }
+
+.footer{
+    background-color: var(--green);
+}
+
+.aqui{
+    text-decoration: none;
+    color: var(--green);
+}
