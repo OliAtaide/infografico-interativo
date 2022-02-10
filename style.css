@@ -32,6 +32,10 @@ h3 {
     font-size: 2em;
 }
 
+.footer-acs{
+    background-color: var(--yellow) !important;
+}
+
 .text-acs{
     color: white !important;
     font-size: 2em !important;

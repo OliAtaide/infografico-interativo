@@ -3,11 +3,13 @@ $('.btn-acessibilidade').click(function () {
     $('.close').addClass('close-acs');
     $('p, table, ul').addClass('text-acs');
     $('body').css('background-color', 'black');
-    $('.btn-collapse').addClass('btn-acs');
+    $('.btn-collapse').removeClass('w-75');
+    $('.btn-collapse').addClass('btn-acs w-100 py-0 lh-sm');
     $('h3, .card-title, .card-subtitle, h5').addClass('card-title-acs');
     $('.card').addClass('bg-black border-white');
-    $('img').not('.access-acs').addClass('img-invert');
+    $('img').not('.access-acs, .logos').addClass('img-invert');
     $('a').addClass('link');
+    $('.footer').addClass('footer-acs');
 
     $('.btn-acessibilidade').hide();
     $('.btn-padrao').show();
@@ -22,8 +24,11 @@ $('.btn-padrao').click(function () {
     $('.btn-collapse').removeClass('btn-acs');
     $('h3, .card-title, .card-subtitle, h5').removeClass('card-title-acs');
     $('.card').removeClass('bg-black border-white');
-    $('img').not('.access').removeClass('img-invert');
+    $('img').not('.access, .logos').removeClass('img-invert');
     $('a').removeClass('link');
+    $('.btn-collapse').addClass('w-75');
+    $('.btn-collapse').removeClass('btn-acs w-100 py-0 lh-sm');
+    $('.footer').removeClass('footer-acs');
 
     $('.btn-acessibilidade').show();
     $('.btn-padrao').hide();
